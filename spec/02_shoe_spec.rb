@@ -4,7 +4,10 @@ describe 'Shoe' do
     # made aware of the brands of the shoes that are being created?
 
     it 'keeps track of all brands' do
+      
       brands = ["Uggs", "Rainbow"]
+      
+      
       brands.each do |brand|
         Shoe.new(brand)
       end
@@ -13,6 +16,9 @@ describe 'Shoe' do
         expect(Shoe::BRANDS).to include(brand)
       end
     end
+
+
+
 
     it 'only keeps track of unique brands' do
       Shoe::BRANDS.clear
