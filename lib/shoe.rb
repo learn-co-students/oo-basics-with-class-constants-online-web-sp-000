@@ -1,14 +1,16 @@
 class Shoe
-  attr_accessor :color, :size, :material, :condition
-  attr_reader :brand
+  BRANDS = []
+  attr_accessor :brand
 
   def initialize(brand)
-    @brand = brand
+    BRANDS << brand
+    BRANDS.uniq!
   end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-
 end
+
+brands = ["Uggs", "Rainbow", "Nike", "Nike"]
+brands.map do |b|
+  Shoe.new(b)
+end
+
+Shoe::BRANDS.inspect
