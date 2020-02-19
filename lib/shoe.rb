@@ -2,8 +2,11 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  BRANDS = Hash.new(0)
+
   def initialize(brand)
     @brand = brand
+    BRANDS[brand] += 1
   end
 
   def cobble
