@@ -9,12 +9,8 @@ class Shoe
     BRANDS << brand if BRANDS.none? {|b| b == brand}
   end
 
-  # def brand= (brand)
-  #   #@brand = brand
-  #   if BRANDS.none? {|b| b == brand}
-  #     BRANDS << brand      
-  #     BRANDS.inspect
-  #   end
+  # def brand
+  #   puts BRANDS.inspect
   # end
 
   def cobble
@@ -26,4 +22,4 @@ end
 
 adidas = Shoe.new("adidas")
 nike = Shoe.new("nike")
-puts nike.brand
+nike.brand
