@@ -1,4 +1,4 @@
-# Object Orientation Basics With Class Constants
+spec/01_book_spec.rb# Object Orientation Basics With Class Constants
 
 ## Objectives
 1. Understand what a class constant is
