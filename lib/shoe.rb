@@ -5,19 +5,17 @@ class Shoe
   
   def initialize(brand)
     @brand= brand 
-     BRANDS << !BRANDS.includes? brand 
+    if !BRANDS.include? brand 
+     BRANDS << brand 
    end 
-     
-     def compare
-       if @brand.!includes BRANDS
-         BRANDS << brand 
-      end
-    end 
+ end 
 
   def size
     @size= 3
   end 
-  
-  def cobble
+   
+   def cobble
     self.condition = "new"
- 
+    puts "Your shoe is as good as new!" 
+  end
+end
