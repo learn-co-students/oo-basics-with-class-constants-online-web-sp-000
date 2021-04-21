@@ -17,4 +17,6 @@ class Shoe
   def unique= (unique)
     @unique = unique
     BRANDS << unique
+  end
+  
 end
