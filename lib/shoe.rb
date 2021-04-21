@@ -10,6 +10,7 @@ class Shoe
     if brand.each do |brand|
       brand = brand
       BRANDS.pop
+      end
     end
     
   end
