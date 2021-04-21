@@ -7,6 +7,11 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    if brand.each do |brand|
+      brand = brand
+      BRANDS.pop
+    end
+    
   end
   
   def cobble
