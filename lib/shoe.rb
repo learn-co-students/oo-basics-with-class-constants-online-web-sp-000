@@ -4,7 +4,13 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    if !BRANDS.include?(brand)
+      BRANDS << brand
+    end
   end
+  
+  # class constant, keeps info of all instances
+  BRANDS = []
 
   def cobble
     self.condition = "new"
